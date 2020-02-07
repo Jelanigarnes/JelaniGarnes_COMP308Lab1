@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Jelani Garnes-Lab 1</title>
+    <style>
+        div.double {border-style: double;}
+        .center {   margin: auto;
+                    
+                    border: 3px solid #73AD21;
+                    padding: 10px;}
+
+
+        input.box{
+        height: 100px;
+        width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="double center">
+<h2>Feedback</h2>
+<form action="/feedback" method="POST">
+    <table>
+    <tr>
+       <td>First Name: </td>
+       <td><input type="text" id="firstname" name="firstname" required/></td>
+    </tr>
+    <tr>
+       <td>Last Name: </td>
+       <td><input type="text" id="lastname" name="lastname" required/></td>
+    </tr>
+     <tr>
+       <td>Email: </td>
+       <td><input type="email" id="email" name="email" required/></td>
+    </tr>   
+    </table>
+    <label for="comments">Comments: </label>
+    <input class="box" type="text" id="comments" name="comments"/>
+    <br><br>
+    <label for="country">Country: </label>
+    <select id="country" name="country">
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    <br><br>
+    <label for="rate">Rate your experience: </label>
+    <select id="rate" name="rate">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+    <br><br>
+     <div>
+     <button type="submit" style="background-color: #33cc33;">Submit</button>
+    </div>
+</form>
+<a href="/login">Login</a>
+<a href="/thankyou">Thank You</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Jelani Garnes-Lab 1</title>
+    <style>
+        div.double {border-style: double;}
+        .center {   margin: auto;
+                    width: 60%;
+                    border: 3px solid #73AD21;
+                    padding: 10px;}
+    </style>
+</head>
+<body>
+<div class="double center">
+<h2>Register</h2>
+<form action="/register" method="POST">
+    <table>
+    <tr>
+       <td>Username: </td>
+       <td><input type="text" id="username" name="username" required/></td>
+    </tr>
+     <tr>
+       <td>Email: </td>
+       <td><input type="email" id="email" name="email" required/></td>
+    </tr>
+    <tr>
+       <td>Password: </td>
+       <td><input type="password" id="password" name="password" required/></td>
+    </tr>
+    </table>
+    <div>
+     <button type="submit" style="background-color: #33cc33;">Register</button>
+    </div>
+</form>
+<a href="/login">Login</a>
+</div>
+</body>
+</html>
